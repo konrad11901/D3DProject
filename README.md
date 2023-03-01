@@ -8,6 +8,6 @@
 * **Esc** - wyjście z programu
 
 ## Źródła
-W projekcie wykorzystano tekstury z Poligon.com:
+W projekcie wykorzystano tekstury z Poliigon.com:
 * https://www.poliigon.com/texture/stone-bricks-beige-015/3339
 * https://www.poliigon.com/texture/ground-dirt-rocky-006/4980
