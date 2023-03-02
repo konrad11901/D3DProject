@@ -30,25 +30,25 @@ private:
 	static constexpr char SCENE_PATH[] = "Assets\\SceneData.obj";
 
 	winrt::com_ptr<IDXGISwapChain4> swap_chain;
-	winrt::com_ptr<ID3D12Device9> device;
+	winrt::com_ptr<ID3D12Device5> device;
 	winrt::com_ptr<ID3D12CommandQueue> command_queue;
 	winrt::com_ptr<ID3D12DescriptorHeap> rtv_heap;
-	winrt::com_ptr<ID3D12Resource2> render_targets[FRAME_COUNT];
+	winrt::com_ptr<ID3D12Resource> render_targets[FRAME_COUNT];
 	winrt::com_ptr<ID3D12CommandAllocator> command_allocator;
-	winrt::com_ptr<ID3D12GraphicsCommandList6> command_list;
+	winrt::com_ptr<ID3D12GraphicsCommandList2> command_list;
 	winrt::com_ptr<ID3D12PipelineState> pipeline_state;
 
 	winrt::com_ptr<ID3D12RootSignature> root_signature;
-	winrt::com_ptr<ID3D12Resource2> vertex_buffer;
+	winrt::com_ptr<ID3D12Resource> vertex_buffer;
 	D3D12_VERTEX_BUFFER_VIEW vertex_buffer_view;
 
 	winrt::com_ptr<ID3D12DescriptorHeap> cbv_heap;
-	winrt::com_ptr<ID3D12Resource2> constant_buffer;
+	winrt::com_ptr<ID3D12Resource> constant_buffer;
 
 	winrt::com_ptr<ID3D12DescriptorHeap> dsv_heap;
-	winrt::com_ptr<ID3D12Resource2> depth_buffer;
+	winrt::com_ptr<ID3D12Resource> depth_buffer;
 
-	winrt::com_ptr<ID3D12Resource2> texture_resource;
+	winrt::com_ptr<ID3D12Resource> texture_resource;
 
 	winrt::com_ptr<ID3D12Fence1> fence;
 	HANDLE fence_event;
